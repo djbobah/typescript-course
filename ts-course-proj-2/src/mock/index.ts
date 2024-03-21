@@ -6,7 +6,7 @@ export const defaultUser: LocalGitHubUser = {
   avatar: "https://avatars.githubusercontent.com/u/36237995?v=4",
   name: "Mikhail Nepomniashchii",
   company: "EPAM",
-  // blog: "mishanep.com",
+  blog: "mishanep.com",
   location: "Malaga",
   bio: "React developer",
   twitter: "pcgramota",

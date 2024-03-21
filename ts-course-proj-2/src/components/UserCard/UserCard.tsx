@@ -1,4 +1,5 @@
 import { LocalGitHubUser } from "../../types";
+import { UserInfo } from "../UserInfo";
 import { UserStat } from "../UserStat";
 import { UserTitle } from "../UserTitle";
 import styles from "./UserCard.module.scss";
@@ -16,6 +17,12 @@ export const UserCard = (props: UserCardProps) => (
       repos={props.repos}
       followers={props.followers}
       following={props.following}
+    />
+    <UserInfo
+      blog={props.blog}
+      company={props.company}
+      location={props.location}
+      twitter={props.twitter}
     />
   </div>
 );
