@@ -1,14 +1,14 @@
 import AddNewItem from "components/NewItem";
 
 import { useAppDispatch } from "redux-hook";
-import { addTodo } from "./todoSlice";
+import { createTodo } from "./todoAsyncActions";
 
-const NewTodo = () => {
+const NewAsyncTodo = () => {
   const dispatch = useAppDispatch();
   const handleNewTodo = (title: string) => {
-    dispatch(addTodo(title));
+    dispatch(createTodo(title));
   };
   return <AddNewItem placeholder="add new todo" handleClick={handleNewTodo} />;
 };
 
-export default NewTodo;
+export default NewAsyncTodo;

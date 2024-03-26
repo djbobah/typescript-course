@@ -1,6 +1,8 @@
+import AsyncTodoList from "features/AsyncTodo/AsyncTodoList";
 import "./App.css";
 import TodoList from "./features/Todo/TodoList";
 import NewTodo from "features/Todo/NewTodo";
+import NewAsyncTodo from "features/AsyncTodo/NewAsyncTodo";
 
 function App() {
   return (
@@ -8,6 +10,10 @@ function App() {
       <NewTodo />
 
       <TodoList />
+
+      <hr />
+      <NewAsyncTodo />
+      <AsyncTodoList />
     </div>
   );
 }
