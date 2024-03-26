@@ -3,7 +3,7 @@ import { buffer } from "stream/consumers";
 import { Todo } from "types";
 import { createTodo, fetchAllTodos } from "./todoAsyncActions";
 
-type TodoSlice = {
+export type TodoSlice = {
   status: "idle" | "loading" | "finished" | "error";
   list: Todo[];
 };
