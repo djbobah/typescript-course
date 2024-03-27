@@ -93,7 +93,7 @@ interface InfoProps extends Country {
   push: NavigateFunction;
 }
 
-export const Info = (props) => {
+export const Info = (props: InfoProps) => {
   const {
     name,
     nativeName,
