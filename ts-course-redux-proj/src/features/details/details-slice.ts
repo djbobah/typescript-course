@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { RootState } from "store";
 import { Country, Extra, Status } from "types";
 
 export const loadCountryByName = createAsyncThunk<
